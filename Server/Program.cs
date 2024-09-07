@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
-using Server.Controllers.Authentication;
+using Server.Controllers.Accounts;
 using Server.Controllers.Databases;
 using Server.Controllers.Databases.Interfaces;
+using Server.Services.Accounts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +15,7 @@ if (connection is null)
     return;
 }
 
-if (AuthenticationController.SecretKey is null)
+if (AccountsController.SecretKey is null)
 {
     return;
 }
@@ -25,16 +27,16 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuer = true,
-        ValidIssuer = AuthenticationController.Issuer,
+        ValidIssuer = AccountsService.Issuer,
         ValidateAudience = true,
-        ValidAudience = AuthenticationController.Audience,
+        ValidAudience = AccountsService.Audience,
         ValidateLifetime = true,
-        IssuerSigningKey = new SymmetricSecurityKey(AuthenticationController.SecretKeyInBytes),
+        IssuerSigningKey = new SymmetricSecurityKey(AccountsService.SecretKeyInBytes),
         ValidateIssuerSigningKey = true
     };
 });
 
-builder.Services.AddSingleton<IDatabase>(new SqlDatabase(connection));
+builder.Services.AddSingleton<IAsyncDatabase>(new SqlDatabase(connection));
 
 var app = builder.Build();
 
@@ -47,6 +49,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.MapPost("/chessgame", [Authorize] () => {});
 
 app.MapControllers();
 

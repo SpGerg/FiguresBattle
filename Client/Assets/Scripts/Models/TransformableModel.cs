@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using Models.Interfaces;
+using UnityEngine;
 
 namespace Models
 {
-    public abstract class TransformableModel : ModelBase
+    public abstract class TransformableModel : ModelBase, ITransformable
     {
         public Vector3 Position { get; set; }
 

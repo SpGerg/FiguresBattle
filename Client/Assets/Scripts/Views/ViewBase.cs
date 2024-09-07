@@ -5,7 +5,7 @@ namespace Views
     using Presenters.Interfaces;
     using Views.Interfaces;
 
-    public abstract class ViewBase : MonoBehaviour, IView
+    public abstract class ViewBase : IView
     {
         public IPresenter Presenter { get; private set; }
 

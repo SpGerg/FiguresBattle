@@ -1,16 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
-namespace Server.Controllers.Authentication
+namespace Server.Services.Accounts
 {
-    using Microsoft.IdentityModel.Tokens;
     using Server.Controllers.Databases.Interfaces;
-    using System.IdentityModel.Tokens.Jwt;
-    using System.Security.Claims;
     using System.Text;
 
-    [ApiController]
-    [Route("api/[controller]")]
-    public class AuthenticationController(IDatabase database) : ControllerBase
+    public class AccountsService(ILogger<AccountsService> logger, IAsyncDatabase database)
     {
         public static SymmetricSecurityKey SymmetricSecurityKey => new SymmetricSecurityKey(SecretKeyInBytes);
 
@@ -22,27 +19,29 @@ namespace Server.Controllers.Authentication
         public const string Audience = "Figures Battle Client";
 
         private readonly JwtSecurityTokenHandler _tokenHandler = new();
-        private readonly IDatabase _database = database;
 
-        private readonly int _jwtTokenTimeInDays = 14;
+        private readonly int _jwtTokenDurationInDays = 14;
 
-        [HttpPost("login")]
-        public Task<ActionResult<string>> PostLogin(string username, string password)
+        public ILogger<AccountsService> Logger => logger;
+
+        public async Task<string> Login(string username, string password)
         {
+            await database.Login(username, password);
+
             var claims = new List<Claim>()
             {
                 new("username", username),
                 new("password", password)
             };
 
-            var duration = DateTime.UtcNow.AddDays(_jwtTokenTimeInDays);
+            var duration = DateTime.UtcNow.AddDays(_jwtTokenDurationInDays);
             var signingCredentials = new SigningCredentials(SymmetricSecurityKey, SecurityAlgorithms.Sha256);
 
             var jwt = new JwtSecurityToken(Issuer, Audience, claims, null, duration, signingCredentials);
 
-            var serializaed = _tokenHandler.WriteToken(jwt);
+            var serialized = _tokenHandler.WriteToken(jwt);
 
-            return Task.FromResult<ActionResult<string>>(Ok(serializaed));
+            return serialized;
         }
     }
-} 
+}

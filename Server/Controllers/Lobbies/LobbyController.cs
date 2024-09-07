@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Server.Controllers.Lobbies.Datas;
+using System.Collections.Concurrent;
 
 namespace Server.Controllers.Lobbies
 {
+    using Server.Controllers.Lobbies.Datas;
+
     [ApiController]
     [Route("api/[controller]")]
     public class LobbyController : ControllerBase
     {
-        private readonly ConcurrentDictionary<Lobby>
-
         [HttpGet("create")]
         public async Task<ActionResult<Lobby>> GetNewLobby()
         {
