@@ -1,17 +1,15 @@
-﻿using UnityEngine;
-
-namespace Views
+﻿namespace Views
 {
     using Presenters.Interfaces;
     using Views.Interfaces;
 
     public abstract class ViewBase : IView
     {
-        public IPresenter Presenter { get; private set; }
-
-        public void Initialize(IPresenter presenter)
+        protected ViewBase(IPresenter presenter)
         {
             Presenter = presenter;
         }
+
+        public IPresenter Presenter { get; private set; }
     }
 }

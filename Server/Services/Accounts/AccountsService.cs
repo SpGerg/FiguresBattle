@@ -9,7 +9,7 @@ namespace Server.Services.Accounts
 
     public class AccountsService(ILogger<AccountsService> logger, IAsyncDatabase database)
     {
-        public static SymmetricSecurityKey SymmetricSecurityKey => new SymmetricSecurityKey(SecretKeyInBytes);
+        public static SymmetricSecurityKey SymmetricSecurityKey => new(SecretKeyInBytes);
 
         public static byte[] SecretKeyInBytes => Encoding.UTF8.GetBytes(SecretKey);
 

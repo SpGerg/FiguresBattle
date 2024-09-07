@@ -5,7 +5,6 @@ namespace Presenters
     using Views.Interfaces;
     using Presenters.Interfaces;
     using Models.Interfaces;
-    using Assets.Scripts.Models.Interfaces;
 
     public abstract class PresenterBase : MonoBehaviour, IPresenter
     {

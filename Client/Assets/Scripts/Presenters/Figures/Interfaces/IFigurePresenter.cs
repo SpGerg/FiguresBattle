@@ -3,14 +3,15 @@
 namespace Presenters.Figures.Interfaces
 {
     using Models.Figures.Interfaces;
+    using Presenters.Interfaces;
     using Views;
     using Views.Figures.Interfaces;
 
-    public interface IFigurePresenter
+    public interface IFigurePresenter : IPresenter
     {
-        IFigureModel Model { get; }
+        new IFigureModel Model { get; }
 
-        IFigureView View { get; }
+        new IFigureView View { get; }
 
         UnityEvent Moved { get; }
 
