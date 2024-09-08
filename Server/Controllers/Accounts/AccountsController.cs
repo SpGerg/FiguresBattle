@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Data.Common;
 
 namespace Server.Controllers.Accounts
 {
-    using Azure.Core;
     using Server.Services.Accounts;
-    using System.Data.Common;
 
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/figuresbattle/[controller]")]
     public class AccountsController(AccountsService accountsService) : ControllerBase
     {
         private readonly AccountsService _accountsService = accountsService;

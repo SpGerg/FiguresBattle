@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Concurrent;
 
 namespace Server.Controllers.Lobbies
 {
-    using Server.Controllers.Lobbies.Datas;
+    using Server.Services.Lobbies.Datas;
 
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/figuresbattle/[controller]")]
     public class LobbyController : ControllerBase
     {
         [HttpGet("create")]

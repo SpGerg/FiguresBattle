@@ -15,7 +15,7 @@ if (connection is null)
     return;
 }
 
-if (AccountsController.SecretKey is null)
+if (AccountsService.SecretKey is null)
 {
     return;
 }

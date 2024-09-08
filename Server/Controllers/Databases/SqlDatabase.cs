@@ -43,7 +43,7 @@ namespace Server.Controllers.Databases
 
             using (var createChessGamesPlayersTable = new SqlCommand(
                 $"CREATE TABLE IF NOT EXISTS {ChessGamesPlayersTableName} " +
-                "(`GameId` SMALLINT NOT NULL, " +
+                "(`ChessGameId` SMALLINT NOT NULL, " +
                 "`Username` VARCHAR(16) NOT NULL" +
                 ");",
                 _connection))
@@ -53,7 +53,7 @@ namespace Server.Controllers.Databases
 
             using (var createChessGamesFigureAbilities = new SqlCommand(
                 $"CREATE TABLE IF NOT EXISTS {ChessGamesFigureAbilitiesTableName} " +
-                "(`GameId` SMALLINT NOT NULL, " +
+                "(`ChessGameId` SMALLINT NOT NULL, " +
                 "`FigureId` SMALLINT NOT NULL, " +
                 "`AbilityId` SMALLINT NOT NULL" +
                 ");",
