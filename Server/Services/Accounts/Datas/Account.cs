@@ -1,6 +1,6 @@
 ﻿namespace Server.Services.Accounts.Datas
 {
-    public class User
+    public class Account
     {
         public required string Username { get; init; }
 

@@ -93,7 +93,7 @@ namespace Server.Controllers.Databases
             await deleteCommand.ExecuteNonQueryAsync();
         }
 
-        public async Task<User> GetAccount(string username)
+        public async Task<Account> GetAccount(string username)
         {
             _connection.Open();
 
@@ -107,7 +107,12 @@ namespace Server.Controllers.Databases
 
             _connection.Close();
 
-            return new User()
+            if (result is null)
+            {
+                return null;
+            }
+
+            return new Account()
             {
                 Username = username,
                 EncryptedPassword = result.GetString(PasswordNumberInTable),
@@ -115,7 +120,7 @@ namespace Server.Controllers.Databases
             };
         }
 
-        public async Task<bool> Login(string username, string password)
+        public async Task Login(string username, string password)
         {
             if (username.Length > 16 || string.IsNullOrEmpty(username))
             {
@@ -135,8 +140,6 @@ namespace Server.Controllers.Databases
             {
                 throw new ArgumentException("Wrong login or password.");
             }
-
-            return true;
         }
 
         public async Task Register(string username, string password, string country)

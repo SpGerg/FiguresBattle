@@ -1,11 +1,12 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Text;
 
 namespace Server.Services.Accounts
 {
     using Server.Controllers.Databases.Interfaces;
-    using System.Text;
+    using Server.Services.Accounts.Datas;
 
     public class AccountsService(ILogger<AccountsService> logger, IAsyncDatabase database)
     {
@@ -42,6 +43,11 @@ namespace Server.Services.Accounts
             var serialized = _tokenHandler.WriteToken(jwt);
 
             return serialized;
+        }
+
+        public async Task<Account> GetUser(string username)
+        {
+            return await database.GetAccount(username);
         }
     }
 }

@@ -4,11 +4,11 @@
 
     public interface IAsyncDatabase
     {
-        Task<bool> Login(string username, string password);
+        Task Login(string username, string password);
 
         Task Register(string username, string password, string country);
 
-        Task<User> GetAccount(string username);
+        Task<Account> GetAccount(string username);
 
         Task DeleteAccount(string username, string password);
     }

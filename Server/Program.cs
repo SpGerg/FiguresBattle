@@ -50,8 +50,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapPost("/chessgame", [Authorize] () => {});
-
 app.MapControllers();
 
 app.Run();

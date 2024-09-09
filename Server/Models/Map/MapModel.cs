@@ -2,14 +2,17 @@
 {
     using Server.Models.Figures.Interfaces;
     using Server.Models.Map.Datas;
+    using Server.Models.Map.Interfaces;
 
-    public class MapModel
+    public class MapModel : IMapModel
     {
         private const int Width = 8;
 
         private const int Height = 8;
 
         private readonly IFigureModel[,] _map = new IFigureModel[Width, Height];
+
+        public IFigureModel[,] Map => _map;
 
         public IFigureModel this[Vector2Int vector2]
         {
