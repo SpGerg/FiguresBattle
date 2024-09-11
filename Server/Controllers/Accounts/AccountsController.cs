@@ -3,14 +3,15 @@ using System.Data.Common;
 
 namespace Server.Controllers.Accounts
 {
+    using Server.Controllers.Accounts.Datas.DTOs;
     using Server.Services.Accounts;
+    using Server.Services.Accounts.Datas;
+    using System.Text.Json;
 
     [ApiController]
     [Route("api/figuresbattle/[controller]")]
     public class AccountsController(AccountsService accountsService) : ControllerBase
     {
-        private readonly AccountsService _accountsService = accountsService;
-
         [HttpPost("login")]
         public async Task<IResult> PostLogin(string username, string password)
         {
@@ -18,11 +19,11 @@ namespace Server.Controllers.Accounts
 
             try
             {
-                jwt = await _accountsService.Login(username, password);
+                jwt = await accountsService.Login(username, password);
             }
             catch (DbException exception)
             {
-                _accountsService.Logger.LogError(exception.ToString());
+                accountsService.Logger.LogError(exception.ToString());
 
                 return Results.Problem("Internal server error", statusCode: 500);
             }
@@ -37,6 +38,38 @@ namespace Server.Controllers.Accounts
             };
 
             return Results.Ok(response);
+        }
+
+        [HttpPost("get_account")]
+        public async Task<IResult> PostGetUser(string username)
+        {
+            Account account;
+
+            try
+            {
+                account = await accountsService.GetUser(username);
+            }
+            catch (DbException exception)
+            {
+                accountsService.Logger.LogError($"{username}: {exception.Message}");
+
+                return Results.Problem("Server internal error", statusCode: 500);
+            }
+            catch (Exception exception)
+            {
+                return Results.BadRequest(exception.Message);
+            }
+
+            var accountDto = new AccountDTO()
+            {
+                Username = username,
+                Country = account.Country,
+                ChessGames = account.ChessGames
+            };
+
+            var serialized = JsonSerializer.Serialize(accountDto);
+
+            return Results.Ok(serialized);
         }
     }
 } 

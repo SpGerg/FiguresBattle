@@ -19,8 +19,4 @@
     <PackageReference Include="System.Security.Claims" Version="4.3.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\Figures\Abilities\" />
-  </ItemGroup>
-
 </Project>
