@@ -62,9 +62,7 @@ namespace Server.Controllers.Accounts
 
             var accountDto = new AccountDTO()
             {
-                Username = username,
-                Country = account.Country,
-                ChessGames = account.ChessGames
+                Username = username
             };
 
             var serialized = JsonSerializer.Serialize(accountDto);

@@ -1,4 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Server.Controllers.Databases
 {
@@ -9,9 +11,6 @@ namespace Server.Controllers.Databases
     using Server.Models.Figures.Enums;
     using Server.Models.Map.Datas;
     using Server.Services.Accounts.Datas;
-    using System;
-    using System.Security.Cryptography;
-    using System.Text;
 
     public class SqlDatabase : IAsyncDatabase
     {
@@ -21,13 +20,18 @@ namespace Server.Controllers.Databases
             _connection.Open();
 
             using (var createAccountsTable = new SqlCommand(
-                $"CREATE TABLE IF NOT EXISTS {AccountsTableName} " +
-                "(Username VARCHAR(16) NOT NULL, " +
+                $"IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{AccountsTableName}') AND type in (N'U')) " +
+                $"CREATE TABLE {AccountsTableName} " +
+                "(Username VARCHAR(16) NOT NULL UNIQUE, " +
                 "Password TEXT NOT NULL, " +
-                "Country TEXT NOT NULL" +
-                "Status ENUM('Active', 'Banned', 'Freezed') NOT NULL" +
-                "Permissions SET('Ban', 'Freeze', 'Comment')" +
-                "CreatedDate DATE NOT NULL, " +
+                "Country TEXT NOT NULL, " +
+                "IsActive BIT NOT NULL, " +
+                "IsFreezed BIT NOT NULL, " +
+                "IsBanned BIT NOT NULL, " +
+                "IsCanBan BIT NOT NULL, " +
+                "IsCanFreeze BIT NOT NULL, " +
+                "IsCanComment BIT NOT NULL, " +
+                "CreatedDate DATE NOT NULL" +
                 ");",
                 _connection))
             {
@@ -35,9 +39,12 @@ namespace Server.Controllers.Databases
             }
 
             using (var createChessGamesTable = new SqlCommand(
-                $"CREATE TABLE IF NOT EXISTS {ChessGamesTableName} " +
-                "(ChessGameId SMALLINT NOT NULL AUTO_INCREMENT, " +
-                "Status ENUM('InProgress', 'Finished', 'Draw')" +
+                $"IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{ChessGamesTableName}') AND type in (N'U')) " +
+                $"CREATE TABLE {ChessGamesTableName} " +
+                "(ChessGameId SMALLINT NOT NULL IDENTITY(1, 1), " +
+                "IsInProgress BIT NOT NULL, " +
+                "IsFinished BIT NOT NULL, " +
+                "IsDraw BIT NOT NULL, " +
                 "PRIMARY KEY (ChessGameId)" +
                 ");",
                 _connection))
@@ -46,7 +53,8 @@ namespace Server.Controllers.Databases
             }
 
             using (var createChessGamesPlayersTable = new SqlCommand(
-                $"CREATE TABLE IF NOT EXISTS {ChessGamesPlayersTableName} " +
+                $"IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{ChessGamesPlayersTableName}') AND type in (N'U')) " +
+                $"CREATE TABLE {ChessGamesPlayersTableName} " +
                 $"(ChessGameId SMALLINT NOT NULL FOREIGN KEY REFERENCES {ChessGamesTableName}, " +
                 "Username VARCHAR(16) NOT NULL" +
                 ");",
@@ -56,7 +64,8 @@ namespace Server.Controllers.Databases
             }
 
             using (var createChessGamesFigureAbilities = new SqlCommand(
-                $"CREATE TABLE IF NOT EXISTS {ChessGamesFigureAbilitiesTableName} " +
+                $"IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{ChessGamesFigureAbilitiesTableName}') AND type in (N'U')) " +
+                $"CREATE TABLE {ChessGamesFigureAbilitiesTableName} " +
                 $"(ChessGameId SMALLINT NOT NULL FOREIGN KEY REFERENCES {ChessGamesTableName}, " +
                 "FigureId SMALLINT NOT NULL, " +
                 "AbilityId SMALLINT NOT NULL" +
@@ -67,12 +76,13 @@ namespace Server.Controllers.Databases
             }
 
             using (var createChessGamesMoves = new SqlCommand(
-                $"CREATE TABLE IF NOT EXISTS {ChessGamesFigureMovesTableName} " +
+                $"IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{ChessGamesFigureMovesTableName}') AND type in (N'U')) " +
+                $"CREATE TABLE {ChessGamesFigureMovesTableName} " +
                 $"(ChessGameId SMALLINT NOT NULL FOREIGN KEY REFERENCES {ChessGamesTableName}, " +
                 "FigurePositionX SMALLINT NOT NULL, " +
-                "FigurePositionY SMALLINT NOT NULL" +
-                "NewFigurePositionX SMALLINT NOT NULL" +
-                "NewFigurePositionY SMALLINT NOT NULL" +
+                "FigurePositionY SMALLINT NOT NULL, " +
+                "NewFigurePositionX SMALLINT NOT NULL, " +
+                "NewFigurePositionY SMALLINT NOT NULL, " +
                 "MoveNumber SMALLINT NOT NULL" +
                 ");",
                 _connection))
@@ -100,9 +110,8 @@ namespace Server.Controllers.Databases
             var encrypted = GetEncrypted(password);
 
             var deleteCommand = new SqlCommand(
-                $"DELETE FROM accounts_table WHERE Username LIKE username AND Password LIKE password",
+                $"DELETE FROM {AccountsTableName} WHERE Username LIKE username AND Password LIKE password",
                 _connection);
-            deleteCommand.Parameters.AddWithValue("accounts_table", AccountsTableName);
             deleteCommand.Parameters.AddWithValue("username", username);
             deleteCommand.Parameters.AddWithValue("password", encrypted);
 
@@ -162,8 +171,10 @@ namespace Server.Controllers.Databases
 
             for (var i = 0; i < chessGamesDtos.Length; i++)
             {
-                var chessGameDto = new ChessGameDTO();
-                chessGameDto.FiguresAbilities = [];
+                var chessGameDto = new ChessGameDTO
+                {
+                    FiguresAbilities = []
+                };
 
                 var usernames = (string[]) result["Username"];
                 var accountDtos = new AccountDTO[usernames.Length];
@@ -274,8 +285,8 @@ namespace Server.Controllers.Databases
             var encrypted = GetEncrypted(password);
 
             var register = new SqlCommand(
-                $"INSERT INTO {AccountsTableName} (Username, Password, Country, Status, Permissions, CreatedDate)" +
-                "VALUES (username, password, country, Active, ('Comment'), createdDate",
+                $"INSERT INTO {AccountsTableName} (Username, Password, Country, IsActive, IsBanned, IsFreezed, IsCanBan, IsCanFreeze, IsCanComment, CreatedDate)" +
+                "VALUES (username, password, country, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, createdDate",
                 _connection);
             register.Parameters.AddWithValue("username", username);
             register.Parameters.AddWithValue("password", encrypted);

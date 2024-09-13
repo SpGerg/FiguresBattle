@@ -31,10 +31,6 @@ namespace Server.Controllers.Lobbies
             return Ok(serialized);
         }
 
-        [HttpPost("join")]
-        public ActionResult PostJoin(int id)
-        {
-
-        }
+        
     }
 }

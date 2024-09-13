@@ -1,7 +1,5 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
-using Server.Controllers.Accounts;
 using Server.Controllers.Databases;
 using Server.Controllers.Databases.Interfaces;
 using Server.Services.Accounts;

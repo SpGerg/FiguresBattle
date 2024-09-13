@@ -5,14 +5,15 @@
     using Server.Models.Figures.Enums;
     using Server.Models.Figures.Interfaces;
     using Server.Services.Accounts.Datas;
+    using Server.Services.Map;
 
-    public class FiguresFactory
+    public class FiguresFactory(ChessGameService chessGameService)
     {
         public IFigureModel? Create(FigureType figureType, Account user, SideType sideType)
         {
             return figureType switch
             {
-                FigureType.Knight => new KnightModel(user, sideType),
+                FigureType.Knight => new KnightModel(user, sideType, chessGameService),
                 _ => null,
             };
         }

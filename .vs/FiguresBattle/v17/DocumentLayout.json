@@ -7,24 +7,44 @@
       "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\databases\\sqldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\chessgame\\datas\\dtos\\chessgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\chessgame\\datas\\dtos\\chessgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\services\\accounts\\accountsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\services\\accounts\\accountsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\accounts\\datas\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\accounts\\datas\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\figures\\figuresfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\figures\\figuresfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\accounts\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\accounts\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\services\\accounts\\datas\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\services\\accounts\\datas\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\accounts\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\accounts\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\accounts\\datas\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\accounts\\datas\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\lobbies\\lobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\lobbies\\lobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\figures\\knightmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\figures\\knightmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\chessgame\\datas\\dtos\\chessgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\chessgame\\datas\\dtos\\chessgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\lobbies\\datas\\dtos\\lobbydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,13 +78,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Server",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Server.csproj",
+              "RelativeDocumentMoniker": "Server\\Server.csproj",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Server.csproj",
+              "RelativeToolTip": "Server\\Server.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-13T06:13:12.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FiguresFactory.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Figures\\FiguresFactory.cs",
+              "RelativeDocumentMoniker": "Server\\Models\\Figures\\FiguresFactory.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Figures\\FiguresFactory.cs",
+              "RelativeToolTip": "Server\\Models\\Figures\\FiguresFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:03:18.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LobbyController.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Lobbies\\LobbyController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\Lobbies\\LobbyController.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Lobbies\\LobbyController.cs",
+              "RelativeToolTip": "Server\\Controllers\\Lobbies\\LobbyController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAIAwwCEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:02:28.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KnightModel.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Figures\\KnightModel.cs",
+              "RelativeDocumentMoniker": "Server\\Models\\Figures\\KnightModel.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Figures\\KnightModel.cs",
+              "RelativeToolTip": "Server\\Models\\Figures\\KnightModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:01:57.714Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAcwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:01:30.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AccountsService.cs",
               "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Accounts\\AccountsService.cs",
               "RelativeDocumentMoniker": "Server\\Services\\Accounts\\AccountsService.cs",
               "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Accounts\\AccountsService.cs",
               "RelativeToolTip": "Server\\Services\\Accounts\\AccountsService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T14:48:46.339Z"
             },
@@ -76,20 +155,20 @@
               "RelativeDocumentMoniker": "Server\\Controllers\\Databases\\SqlDatabase.cs",
               "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Databases\\SqlDatabase.cs",
               "RelativeToolTip": "Server\\Controllers\\Databases\\SqlDatabase.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAmwCcAAAAVAAAA",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAMwFoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T14:42:42.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Accounts\\Datas\\Account.cs",
               "RelativeDocumentMoniker": "Server\\Services\\Accounts\\Datas\\Account.cs",
               "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Accounts\\Datas\\Account.cs",
               "RelativeToolTip": "Server\\Services\\Accounts\\Datas\\Account.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T14:42:09.498Z"
             },
@@ -101,25 +180,25 @@
               "RelativeDocumentMoniker": "Server\\Controllers\\Accounts\\AccountsController.cs",
               "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Accounts\\AccountsController.cs",
               "RelativeToolTip": "Server\\Controllers\\Accounts\\AccountsController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAtwEsAAAAAAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAIAwwEAAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T14:41:23.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "AccountDTO.cs",
               "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Accounts\\Datas\\DTOs\\AccountDTO.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\Accounts\\Datas\\DTOs\\AccountDTO.cs",
               "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Accounts\\Datas\\DTOs\\AccountDTO.cs",
               "RelativeToolTip": "Server\\Controllers\\Accounts\\Datas\\DTOs\\AccountDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T14:41:03.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "LobbyDTO.cs",
               "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Lobbies\\Datas\\DTOs\\LobbyDTO.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\Lobbies\\Datas\\DTOs\\LobbyDTO.cs",
@@ -131,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "LobbiesRepository.cs",
               "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Lobbies\\LobbiesRepository.cs",
               "RelativeDocumentMoniker": "Server\\Models\\Lobbies\\LobbiesRepository.cs",
@@ -143,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "ChessGameDTO.cs",
               "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\ChessGame\\Datas\\DTOs\\ChessGameDTO.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\ChessGame\\Datas\\DTOs\\ChessGameDTO.cs",
@@ -155,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "ChessMoveDTO.cs",
               "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\ChessGame\\Datas\\DTOs\\ChessMoveDTO.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\ChessGame\\Datas\\DTOs\\ChessMoveDTO.cs",
