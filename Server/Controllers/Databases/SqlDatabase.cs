@@ -21,8 +21,8 @@ namespace Server.Controllers.Databases
 
             using (var createAccountsTable = new SqlCommand(
                 $"IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{AccountsTableName}') AND type in (N'U')) " +
-                $"CREATE TABLE {AccountsTableName} " +
-                "(Username VARCHAR(16) NOT NULL UNIQUE, " +
+                $"CREATE TABLE {AccountsTableName} (" +
+                "Username VARCHAR(16) NOT NULL UNIQUE, " +
                 "Password TEXT NOT NULL, " +
                 "Country TEXT NOT NULL, " +
                 "IsActive BIT NOT NULL, " +
@@ -40,8 +40,8 @@ namespace Server.Controllers.Databases
 
             using (var createChessGamesTable = new SqlCommand(
                 $"IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{ChessGamesTableName}') AND type in (N'U')) " +
-                $"CREATE TABLE {ChessGamesTableName} " +
-                "(ChessGameId SMALLINT NOT NULL IDENTITY(1, 1), " +
+                $"CREATE TABLE {ChessGamesTableName} (" +
+                "ChessGameId SMALLINT NOT NULL IDENTITY(1, 1), " +
                 "IsInProgress BIT NOT NULL, " +
                 "IsFinished BIT NOT NULL, " +
                 "IsDraw BIT NOT NULL, " +
@@ -54,8 +54,8 @@ namespace Server.Controllers.Databases
 
             using (var createChessGamesPlayersTable = new SqlCommand(
                 $"IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{ChessGamesPlayersTableName}') AND type in (N'U')) " +
-                $"CREATE TABLE {ChessGamesPlayersTableName} " +
-                $"(ChessGameId SMALLINT NOT NULL FOREIGN KEY REFERENCES {ChessGamesTableName}, " +
+                $"CREATE TABLE {ChessGamesPlayersTableName} (" +
+                $"ChessGameId SMALLINT NOT NULL FOREIGN KEY REFERENCES {ChessGamesTableName}, " +
                 "Username VARCHAR(16) NOT NULL" +
                 ");",
                 _connection))
@@ -65,8 +65,8 @@ namespace Server.Controllers.Databases
 
             using (var createChessGamesFigureAbilities = new SqlCommand(
                 $"IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{ChessGamesFigureAbilitiesTableName}') AND type in (N'U')) " +
-                $"CREATE TABLE {ChessGamesFigureAbilitiesTableName} " +
-                $"(ChessGameId SMALLINT NOT NULL FOREIGN KEY REFERENCES {ChessGamesTableName}, " +
+                $"CREATE TABLE {ChessGamesFigureAbilitiesTableName} (" +
+                $"ChessGameId SMALLINT NOT NULL FOREIGN KEY REFERENCES {ChessGamesTableName}, " +
                 "FigureId SMALLINT NOT NULL, " +
                 "AbilityId SMALLINT NOT NULL" +
                 ");",
@@ -77,8 +77,8 @@ namespace Server.Controllers.Databases
 
             using (var createChessGamesMoves = new SqlCommand(
                 $"IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{ChessGamesFigureMovesTableName}') AND type in (N'U')) " +
-                $"CREATE TABLE {ChessGamesFigureMovesTableName} " +
-                $"(ChessGameId SMALLINT NOT NULL FOREIGN KEY REFERENCES {ChessGamesTableName}, " +
+                $"CREATE TABLE {ChessGamesFigureMovesTableName} (" +
+                $"ChessGameId SMALLINT NOT NULL FOREIGN KEY REFERENCES {ChessGamesTableName}, " +
                 "FigurePositionX SMALLINT NOT NULL, " +
                 "FigurePositionY SMALLINT NOT NULL, " +
                 "NewFigurePositionX SMALLINT NOT NULL, " +
@@ -220,6 +220,7 @@ namespace Server.Controllers.Databases
                     chessGameDto.FiguresAbilities.Add((FigureType) figuresIds[j], [.. abilities]);
                 }
 
+                chessGameDto.Id = (int) result["ChessGameId"];
                 chessGameDto.Players = accountDtos;
                 chessGameDto.ChessMoves = chessGameMoves;
             }

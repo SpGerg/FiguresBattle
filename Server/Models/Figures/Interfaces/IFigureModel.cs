@@ -1,9 +1,12 @@
 ﻿namespace Server.Models.Figures.Interfaces
 {
+    using Server.Models.Figures.Datas;
     using Server.Models.Map.Datas;
 
     public interface IFigureModel
     {
-        void MoveTo(Vector2Int vector2);
+        Direction[] Directions { get; }
+
+        bool MoveToIfCan(Vector2Int vector2);
     }
 }

@@ -1,11 +1,15 @@
 ﻿namespace Server.Services.Lobbies
 {
+    using Server.Controllers.Accounts.Datas.DTOs;
     using Server.Models.Abilities.Enums;
     using Server.Models.Figures;
     using Server.Models.Figures.Enums;
     using Server.Models.Lobbies.Datas;
     using Server.Models.Lobbies.Interfaces;
     using Server.Services.Accounts;
+    using Server.Services.Accounts.Datas;
+    using Server.Services.Lobbies.Datas.DTOs;
+    using Server.Services.Lobbies.Enums;
 
     public class LobbiesService(ILogger<LobbiesService> logger, ILobbiesRepository lobbiesRepository, AccountsService accountsService, FiguresFactory figuresFactory)
     {
@@ -34,11 +38,53 @@
             return lobby;
         }
 
-        public async void Join(string username, int id)
+        public Task<LobbyActionDTO> WaitForAction(int id)
         {
-            var account = await accountsService.GetUser(username) ?? throw new Exception($"Unknown account with {username} name.");
+            var lobby = GetById(id);
 
-            var lobby = lobbiesRepository.Get(id) ?? throw new Exception($"Unknown lobby with {id} id.");
+            var count = lobby.Accounts.Count;
+            var figures = lobby.FiguresAbilities.ToDictionary().Values;
+
+            var account = lobby.Accounts.Last();
+
+            while (!lobby.IsDeleted)
+            {
+                if (lobby.Accounts.Count != count)
+                {
+                    var type = count > lobby.Accounts.Count ? LobbyActionType.PlayerLeft : LobbyActionType.PlayerJoin;
+                    account = type is LobbyActionType.PlayerLeft ? lobby.Accounts.Last() : account;
+
+                    return Task.FromResult(new LobbyActionDTO()
+                    {
+                        Type = type,
+                        Value = new AccountDTO() 
+                        {
+                             Username = account.Username
+                        }
+                    });
+                }
+
+                if (!lobby.FiguresAbilities.Values.SequenceEqual(figures))
+                {
+                    return Task.FromResult(new LobbyActionDTO()
+                    {
+                        Type = LobbyActionType.FiguresAbilitiesChanged,
+                        Value = lobby.FiguresAbilities
+                    });
+                }
+            }
+
+            return Task.FromResult(new LobbyActionDTO()
+            {
+                Type = LobbyActionType.Deleted
+            });
+        }
+
+        public async void Join(int id, string username)
+        {
+            var account = await accountsService.GetUser(username);
+
+            var lobby = GetById(id);
 
             if (lobby.Accounts.Count + 1 > lobby.MaxPlayers)
             {
@@ -46,6 +92,34 @@
             }
 
             lobby.Accounts.Add(account);
+        }
+
+        public async void Leave(int id, string username)
+        {
+            var account = await accountsService.GetUser(username);
+
+            var lobby = GetById(id);
+
+            lobby.Accounts.Remove(account);
+
+            if (lobby.Accounts.Count > 0)
+            {
+                return;
+            }
+
+            lobbiesRepository.Remove(lobby);
+        }
+
+        public Lobby GetById(int id)
+        {
+            var lobby = lobbiesRepository.GetById(id);
+
+            if (lobby is null)
+            {
+                throw new Exception($"Unknown lobby with {id} id");
+            }
+
+            return lobby;
         }
     }
 }

@@ -23,7 +23,7 @@ namespace Server.Models.Lobbies
             _lobbies.GetOrAdd(entity.Id, entity);
         }
 
-        public Lobby? Get(int id)
+        public Lobby? GetById(int id)
         {
             if (!_lobbies.TryGetValue(id, out var entity))
             {
@@ -45,9 +45,16 @@ namespace Server.Models.Lobbies
             return ordered.FirstOrDefault().Key + 1;
         }
 
-        public void Remove(Lobby entity)
+        public bool Remove(Lobby entity)
         {
-            _lobbies.TryRemove(new KeyValuePair<int, Lobby>(entity.Id, entity));
+            if (!_lobbies.TryRemove(new KeyValuePair<int, Lobby>(entity.Id, entity)))
+            {
+                return false;
+            } 
+
+            entity.IsDeleted = true;
+
+            return true;
         }
     }
 }

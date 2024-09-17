@@ -1,6 +1,4 @@
-﻿using Server.Controllers.ChessGame.Datas.DTOs;
-
-namespace Server.Services.Accounts.Datas
+﻿namespace Server.Services.Accounts.Datas
 {
     public class Account
     {

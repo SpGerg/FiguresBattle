@@ -6,6 +6,8 @@
 
     public class ChessGameDTO
     {
+        public int Id { get; set; }
+
         public AccountDTO[] Players { get; set; }
 
         public Dictionary<FigureType, AbilityType[]> FiguresAbilities { get; set; }

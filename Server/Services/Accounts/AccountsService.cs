@@ -47,7 +47,14 @@ namespace Server.Services.Accounts
 
         public async Task<Account> GetUser(string username)
         {
-            return await database.GetAccount(username);
+            var account = await database.GetAccount(username);
+
+            if (account is null)
+            {
+                throw new Exception($"Unknown account with {username} name.")
+            }
+
+            return account;
         }
     }
 }

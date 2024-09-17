@@ -5,7 +5,7 @@
 
     public interface ILobbiesRepository : IRepository<Lobby>
     {
-        Lobby? Get(int id);
+        Lobby? GetById(int id);
 
         int GetUniqueId();
     }

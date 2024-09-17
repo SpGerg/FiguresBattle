@@ -15,6 +15,8 @@
 
         public int Id { get; }
 
+        public bool IsDeleted { get; set; }
+
         public int MaxPlayers { get; init; }
 
         public Dictionary<FigureType, AbilityType[]> FiguresAbilities { get; } = [];

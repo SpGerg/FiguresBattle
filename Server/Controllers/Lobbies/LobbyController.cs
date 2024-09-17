@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using System.Text.Json;
 
 namespace Server.Controllers.Lobbies
 {
-    using Microsoft.AspNetCore.Authorization;
     using Server.Controllers.Lobbies.Datas.DTOs;
     using Server.Models.Lobbies.Datas;
     using Server.Services.Lobbies;
-    using System.Text.Json;
+    using Server.Services.Lobbies.Datas.DTOs;
+    using System.Data.Common;
 
     [ApiController]
     [Authorize]
@@ -31,6 +33,28 @@ namespace Server.Controllers.Lobbies
             return Ok(serialized);
         }
 
-        
+        [HttpGet("update")]
+        [Authorize]
+        public async Task<IResult> GetLobbyUpdate(int id)
+        {
+            LobbyActionDTO action;
+
+            try
+            {
+                action = await lobbiesService.WaitForAction(id);
+            }
+            catch (DbException)
+            {
+                return Results.Problem("Server internal error", statusCode: 500);
+            }
+            catch (Exception exception) 
+            {
+                return Results.BadRequest(exception.Message);
+            }
+
+            var serialized = JsonSerializer.Serialize(action);
+
+            return Results.Ok(serialized);
+        }
     }
 }

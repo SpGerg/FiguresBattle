@@ -1,19 +1,48 @@
 ﻿namespace Server.Services.Map
 {
-    using Server.Models.Figures.Interfaces;
+    using Server.Controllers.ChessGame.Datas.DTOs;
+    using Server.Models.ChessGames.Datas;
+    using Server.Models.ChessGames.Interfaces;
     using Server.Models.Map.Datas;
-    using Server.Models.Map.Interfaces;
 
-    public class ChessGameService(IMapModel mapModel)
+    public class ChessGameService(IChessGamesRepository chessGamesRepository)
     {
-        public void SetFigure(IFigureModel figure, Vector2Int vector2)
+        public void SetNewPositions(int gameId, Vector2Int[] oldPositions, Vector2Int[] newPositions)
         {
-            mapModel.SetFigure(figure, vector2);
+            var chessGame = GetChessGame(gameId);
+
+            chessGame.Map.MoveTo(oldPositions, newPositions);
         }
 
-        public IFigureModel GetFigure(Vector2Int vector2)
+        public Task<ChessMoveDTO[]> WaitForChessMove(int id)
         {
-            return mapModel.GetFigure(vector2);
+            return WaitForChessMove(GetChessGame(id));
+        }
+
+        public Task<ChessMoveDTO[]> WaitForChessMove(ChessGame chessGame)
+        {
+            var map = chessGame.Map;
+
+            var last = map.ChessMoveCount;
+
+            while (last == map.ChessMoveCount)
+            {
+                continue;
+            }
+
+            return Task.FromResult(map.ChessMoves[^1]);
+        }
+
+        public ChessGame GetChessGame(int id)
+        {
+            var chessGame = chessGamesRepository.GetById(id);
+
+            if (chessGame is null)
+            {
+                throw new Exception($"Unknown game with {id} id");
+            }
+
+            return chessGame;
         }
     }
 }
