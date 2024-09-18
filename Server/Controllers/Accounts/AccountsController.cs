@@ -13,7 +13,7 @@ namespace Server.Controllers.Accounts
     public class AccountsController(AccountsService accountsService) : ControllerBase
     {
         [HttpPost("login")]
-        public async Task<IResult> PostLogin(string username, string password)
+        public async Task<IResult> PostLogin([FromQuery] string username, [FromQuery] string password)
         {
             string jwt;
 
@@ -41,7 +41,7 @@ namespace Server.Controllers.Accounts
         }
 
         [HttpPost("get_account")]
-        public async Task<IResult> PostGetUser(string username)
+        public async Task<IResult> PostGetUser([FromQuery] string username)
         {
             Account account;
 

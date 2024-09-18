@@ -35,7 +35,7 @@ namespace Server.Controllers.Lobbies
 
         [HttpGet("update")]
         [Authorize]
-        public async Task<IResult> GetLobbyUpdate(int id)
+        public async Task<IResult> GetLobbyUpdate([FromBody] int id)
         {
             LobbyActionDTO action;
 

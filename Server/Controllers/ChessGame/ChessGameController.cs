@@ -14,7 +14,7 @@ namespace Server.Controllers.Figures
     public class ChessGameController(ChessGameService chessGameService)
     {
         [HttpPost("chessmoves")]
-        public Task<IResult> PostChessMoves(int id, Vector2Int[] oldPositions, Vector2Int[] newPositions)
+        public Task<IResult> PostChessMoves([FromQuery] int id, [FromBody] Vector2Int[] oldPositions, [FromBody] Vector2Int[] newPositions)
         {
             if (oldPositions.Length != newPositions.Length)
             {
@@ -38,7 +38,7 @@ namespace Server.Controllers.Figures
         }
 
         [HttpGet("update")]
-        public async Task<IResult> GetChessGameUpdate(int id)
+        public async Task<IResult> GetChessGameUpdate([FromQuery] int id)
         {
             string serialized;
 
