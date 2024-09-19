@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Presenters
+namespace Presenters.ChessBoard
 {
     using Models.Interfaces;
     using Views;
     using Views.Interfaces;
 
-    public class BoardSquarePresenter : PresenterBase
+    public class ChessBoardSquarePresenter : PresenterBase
     {
         public new BoardSquareView View { get; private set; }
 

@@ -3,84 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\databases\\sqldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\databases\\sqldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}|Client\\Assembly-CSharp.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\client\\assets\\scripts\\models\\chessboard\\chessboardmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}|Client\\Assembly-CSharp.csproj|solutionrelative:client\\assets\\scripts\\models\\chessboard\\chessboardmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\databases\\interfaces\\iasyncdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\databases\\interfaces\\iasyncdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}|Client\\Assembly-CSharp.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\client\\assets\\scripts\\presenters\\chessboard\\chessboardpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}|Client\\Assembly-CSharp.csproj|solutionrelative:client\\assets\\scripts\\presenters\\chessboard\\chessboardpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\accounts\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\accounts\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}|Client\\Assembly-CSharp.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\client\\assets\\scripts\\models\\figures\\enums\\figuretype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}|Client\\Assembly-CSharp.csproj|solutionrelative:client\\assets\\scripts\\models\\figures\\enums\\figuretype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\lobbies\\lobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\lobbies\\lobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}|Client\\Assembly-CSharp.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\client\\assets\\scripts\\presenters\\loader\\loaderpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}|Client\\Assembly-CSharp.csproj|solutionrelative:client\\assets\\scripts\\presenters\\loader\\loaderpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}|Client\\Assembly-CSharp.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\client\\assets\\scripts\\presenters\\chessboard\\chessboardsquarepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}|Client\\Assembly-CSharp.csproj|solutionrelative:client\\assets\\scripts\\presenters\\chessboard\\chessboardsquarepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\figures\\figuresfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\figures\\figuresfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\chessgames\\interfaces\\ichessgamesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\chessgames\\interfaces\\ichessgamesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\chessgame\\chessgamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\chessgame\\chessgamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\services\\lobbies\\lobbiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\services\\lobbies\\lobbiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\services\\lobbies\\datas\\dtos\\lobbyactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\services\\lobbies\\datas\\dtos\\lobbyactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\accounts\\datas\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\accounts\\datas\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\controllers\\lobbies\\datas\\dtos\\lobbydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\controllers\\lobbies\\datas\\dtos\\lobbydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\services\\lobbies\\enums\\lobbyactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\services\\lobbies\\enums\\lobbyactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\chessgames\\chessgamesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\chessgames\\chessgamesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\lobbies\\lobbiesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\lobbies\\lobbiesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\services\\chessgame\\chessgameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\services\\chessgame\\chessgameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\lobbies\\datas\\lobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\lobbies\\datas\\lobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\services\\accounts\\accountsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\services\\accounts\\accountsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\map\\basicmapmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\map\\basicmapmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\lobbies\\interfaces\\ilobbiesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\lobbies\\interfaces\\ilobbiesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\chessgames\\datas\\chessgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\chessgames\\datas\\chessgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|c:\\users\\spger\\source\\repos\\figuresbattle\\server\\models\\map\\interfaces\\imapmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11E1DF0-B7BE-4A4F-B6B7-CA5E15B4045F}|Server\\Server.csproj|solutionrelative:server\\models\\map\\interfaces\\imapmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -95,105 +47,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SqlDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Databases\\SqlDatabase.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\Databases\\SqlDatabase.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Databases\\SqlDatabase.cs",
-              "RelativeToolTip": "Server\\Controllers\\Databases\\SqlDatabase.cs",
-              "ViewState": "AQIAAPEAAAAAAAAAAAAcwAcBAAAAAAAA",
+              "Title": "ChessBoardModel.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Client\\Assets\\Scripts\\Models\\ChessBoard\\ChessBoardModel.cs",
+              "RelativeDocumentMoniker": "Client\\Assets\\Scripts\\Models\\ChessBoard\\ChessBoardModel.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Client\\Assets\\Scripts\\Models\\ChessBoard\\ChessBoardModel.cs",
+              "RelativeToolTip": "Client\\Assets\\Scripts\\Models\\ChessBoard\\ChessBoardModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T15:54:38.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IAsyncDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Databases\\Interfaces\\IAsyncDatabase.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\Databases\\Interfaces\\IAsyncDatabase.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Databases\\Interfaces\\IAsyncDatabase.cs",
-              "RelativeToolTip": "Server\\Controllers\\Databases\\Interfaces\\IAsyncDatabase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T15:53:10.939Z",
+              "WhenOpened": "2024-09-19T20:20:37.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AccountsController.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Accounts\\AccountsController.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\Accounts\\AccountsController.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Accounts\\AccountsController.cs",
-              "RelativeToolTip": "Server\\Controllers\\Accounts\\AccountsController.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAowAAAAAAAAAAA",
+              "Title": "FigureType.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Client\\Assets\\Scripts\\Models\\Figures\\Enums\\FigureType.cs",
+              "RelativeDocumentMoniker": "Client\\Assets\\Scripts\\Models\\Figures\\Enums\\FigureType.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Client\\Assets\\Scripts\\Models\\Figures\\Enums\\FigureType.cs",
+              "RelativeToolTip": "Client\\Assets\\Scripts\\Models\\Figures\\Enums\\FigureType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T15:45:43.154Z",
+              "WhenOpened": "2024-09-19T20:19:08.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChessBoardPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Client\\Assets\\Scripts\\Presenters\\ChessBoard\\ChessBoardPresenter.cs",
+              "RelativeDocumentMoniker": "Client\\Assets\\Scripts\\Presenters\\ChessBoard\\ChessBoardPresenter.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Client\\Assets\\Scripts\\Presenters\\ChessBoard\\ChessBoardPresenter.cs",
+              "RelativeToolTip": "Client\\Assets\\Scripts\\Presenters\\ChessBoard\\ChessBoardPresenter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T20:18:00.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChessBoardSquarePresenter.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Client\\Assets\\Scripts\\Presenters\\ChessBoard\\ChessBoardSquarePresenter.cs",
+              "RelativeDocumentMoniker": "Client\\Assets\\Scripts\\Presenters\\ChessBoard\\ChessBoardSquarePresenter.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Client\\Assets\\Scripts\\Presenters\\ChessBoard\\ChessBoardSquarePresenter.cs",
+              "RelativeToolTip": "Client\\Assets\\Scripts\\Presenters\\ChessBoard\\ChessBoardSquarePresenter.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowAIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T20:17:29.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FiguresFactory.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Figures\\FiguresFactory.cs",
+              "RelativeDocumentMoniker": "Server\\Models\\Figures\\FiguresFactory.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Figures\\FiguresFactory.cs",
+              "RelativeToolTip": "Server\\Models\\Figures\\FiguresFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T19:50:35.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IChessGamesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\ChessGames\\Interfaces\\IChessGamesRepository.cs",
+              "RelativeDocumentMoniker": "Server\\Models\\ChessGames\\Interfaces\\IChessGamesRepository.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\ChessGames\\Interfaces\\IChessGamesRepository.cs",
+              "RelativeToolTip": "Server\\Models\\ChessGames\\Interfaces\\IChessGamesRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T19:50:30.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AccountDTO.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Accounts\\Datas\\DTOs\\AccountDTO.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\Accounts\\Datas\\DTOs\\AccountDTO.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Accounts\\Datas\\DTOs\\AccountDTO.cs",
-              "RelativeToolTip": "Server\\Controllers\\Accounts\\Datas\\DTOs\\AccountDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAsAAAA",
+              "Title": "ChessGameController.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\ChessGame\\ChessGameController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\ChessGame\\ChessGameController.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\ChessGame\\ChessGameController.cs",
+              "RelativeToolTip": "Server\\Controllers\\ChessGame\\ChessGameController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwCcAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T15:44:48.762Z",
+              "WhenOpened": "2024-09-19T19:41:04.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LobbyDTO.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Lobbies\\Datas\\DTOs\\LobbyDTO.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\Lobbies\\Datas\\DTOs\\LobbyDTO.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Lobbies\\Datas\\DTOs\\LobbyDTO.cs",
-              "RelativeToolTip": "Server\\Controllers\\Lobbies\\Datas\\DTOs\\LobbyDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "LoaderPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Client\\Assets\\Scripts\\Presenters\\Loader\\LoaderPresenter.cs",
+              "RelativeDocumentMoniker": "Client\\Assets\\Scripts\\Presenters\\Loader\\LoaderPresenter.cs",
+              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Client\\Assets\\Scripts\\Presenters\\Loader\\LoaderPresenter.cs",
+              "RelativeToolTip": "Client\\Assets\\Scripts\\Presenters\\Loader\\LoaderPresenter.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAA1wCMAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T15:43:23.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ChessGamesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\ChessGames\\ChessGamesRepository.cs",
-              "RelativeDocumentMoniker": "Server\\Models\\ChessGames\\ChessGamesRepository.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\ChessGames\\ChessGamesRepository.cs",
-              "RelativeToolTip": "Server\\Models\\ChessGames\\ChessGamesRepository.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T15:00:11.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "Server\\Models\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "Server\\Models\\Interfaces\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T14:59:09.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Lobby.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Lobbies\\Datas\\Lobby.cs",
-              "RelativeDocumentMoniker": "Server\\Models\\Lobbies\\Datas\\Lobby.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Lobbies\\Datas\\Lobby.cs",
-              "RelativeToolTip": "Server\\Models\\Lobbies\\Datas\\Lobby.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T14:56:19.715Z",
+              "WhenOpened": "2024-09-19T19:39:05.314Z",
               "EditorCaption": ""
             },
             {
@@ -203,160 +155,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:3:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AccountsService.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Accounts\\AccountsService.cs",
-              "RelativeDocumentMoniker": "Server\\Services\\Accounts\\AccountsService.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Accounts\\AccountsService.cs",
-              "RelativeToolTip": "Server\\Services\\Accounts\\AccountsService.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAMwDUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T14:51:56.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ILobbiesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Lobbies\\Interfaces\\ILobbiesRepository.cs",
-              "RelativeDocumentMoniker": "Server\\Models\\Lobbies\\Interfaces\\ILobbiesRepository.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Lobbies\\Interfaces\\ILobbiesRepository.cs",
-              "RelativeToolTip": "Server\\Models\\Lobbies\\Interfaces\\ILobbiesRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:37:41.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LobbyActionType.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Lobbies\\Enums\\LobbyActionType.cs",
-              "RelativeDocumentMoniker": "Server\\Services\\Lobbies\\Enums\\LobbyActionType.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Lobbies\\Enums\\LobbyActionType.cs",
-              "RelativeToolTip": "Server\\Services\\Lobbies\\Enums\\LobbyActionType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:34:52.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LobbyActionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Lobbies\\Datas\\DTOs\\LobbyActionDTO.cs",
-              "RelativeDocumentMoniker": "Server\\Services\\Lobbies\\Datas\\DTOs\\LobbyActionDTO.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Lobbies\\Datas\\DTOs\\LobbyActionDTO.cs",
-              "RelativeToolTip": "Server\\Services\\Lobbies\\Datas\\DTOs\\LobbyActionDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:34:36.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LobbiesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Lobbies\\LobbiesRepository.cs",
-              "RelativeDocumentMoniker": "Server\\Models\\Lobbies\\LobbiesRepository.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Lobbies\\LobbiesRepository.cs",
-              "RelativeToolTip": "Server\\Models\\Lobbies\\LobbiesRepository.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwDoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:33:50.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChessGameController.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\ChessGame\\ChessGameController.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\ChessGame\\ChessGameController.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\ChessGame\\ChessGameController.cs",
-              "RelativeToolTip": "Server\\Controllers\\ChessGame\\ChessGameController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:07:07.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ChessGame.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\ChessGames\\Datas\\ChessGame.cs",
-              "RelativeDocumentMoniker": "Server\\Models\\ChessGames\\Datas\\ChessGame.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\ChessGames\\Datas\\ChessGame.cs",
-              "RelativeToolTip": "Server\\Models\\ChessGames\\Datas\\ChessGame.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:05:42.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BasicMapModel.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Map\\BasicMapModel.cs",
-              "RelativeDocumentMoniker": "Server\\Models\\Map\\BasicMapModel.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Map\\BasicMapModel.cs",
-              "RelativeToolTip": "Server\\Models\\Map\\BasicMapModel.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAkwG4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:04:41.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IMapModel.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Map\\Interfaces\\IMapModel.cs",
-              "RelativeDocumentMoniker": "Server\\Models\\Map\\Interfaces\\IMapModel.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Models\\Map\\Interfaces\\IMapModel.cs",
-              "RelativeToolTip": "Server\\Models\\Map\\Interfaces\\IMapModel.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:04:36.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ChessGameService.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\ChessGame\\ChessGameService.cs",
-              "RelativeDocumentMoniker": "Server\\Services\\ChessGame\\ChessGameService.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\ChessGame\\ChessGameService.cs",
-              "RelativeToolTip": "Server\\Services\\ChessGame\\ChessGameService.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAowCMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:04:34.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LobbiesService.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Lobbies\\LobbiesService.cs",
-              "RelativeDocumentMoniker": "Server\\Services\\Lobbies\\LobbiesService.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Services\\Lobbies\\LobbiesService.cs",
-              "RelativeToolTip": "Server\\Services\\Lobbies\\LobbiesService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAewBkAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:04:14.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LobbyController.cs",
-              "DocumentMoniker": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Lobbies\\LobbyController.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\Lobbies\\LobbyController.cs",
-              "ToolTip": "C:\\Users\\spger\\source\\repos\\FiguresBattle\\Server\\Controllers\\Lobbies\\LobbyController.cs",
-              "RelativeToolTip": "Server\\Controllers\\Lobbies\\LobbyController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAgwDwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T08:01:32.387Z",
-              "EditorCaption": ""
             }
           ]
         }

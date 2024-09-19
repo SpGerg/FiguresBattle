@@ -19,7 +19,7 @@
 
         public abstract Direction[] Directions { get; }
 
-        private IMapModel Map => chessGame.Map;
+        private IChessBoardModel Map => chessGame.Map;
 
         public bool MoveToIfCan(Vector2Int vector2)
         {

@@ -7,6 +7,8 @@
     {
         Lobby? GetById(int id);
 
+        Lobby? GetLobbyWithAccount(string username);
+
         int GetUniqueId();
     }
 }

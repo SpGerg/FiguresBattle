@@ -1,33 +1,33 @@
 ﻿namespace Server.Models.Map
 {
     using Server.Controllers.ChessGame.Datas.DTOs;
+    using Server.Models.ChessBoard;
     using Server.Models.Figures.Datas;
     using Server.Models.Figures.Interfaces;
     using Server.Models.Map.Datas;
-    using Server.Models.Map.Interfaces;
 
-    public class BasicMapModel : IMapModel
+    public class BasicChessBoardModel : ChessBoardModel
     {
         private const int Width = 8;
 
         private const int Height = 8;
 
-        public BasicMapModel()
+        public BasicChessBoardModel()
         {
             ChessMoves = _chessMoves;
         }
 
         private readonly IFigureModel[,] _map = new IFigureModel[Width, Height];
 
-        public IFigureModel[,] Map => _map;
-
-        public int ChessMoveCount => _chessMoveCount;
-
-        public IReadOnlyList<ChessMoveDTO[]> ChessMoves { get; private set; }
-
         private readonly List<ChessMoveDTO[]> _chessMoves = [];
 
         private int _chessMoveCount;
+
+        public override IFigureModel[,] Map => _map;
+
+        public override IReadOnlyList<ChessMoveDTO[]> ChessMoves { get; protected set; }
+
+        public override int ChessMoveCount => _chessMoveCount;
 
         public IFigureModel this[Vector2Int vector2]
         {
@@ -41,22 +41,22 @@
             }
         }
 
-        public IFigureModel GetFigure(Vector2Int vector2)
+        public override IFigureModel GetFigure(Vector2Int vector2)
         {
             return _map[vector2.X, vector2.Y];
         }
 
-        public IFigureModel GetFigure(int x, int y)
+        public override IFigureModel GetFigure(int x, int y)
         {
             return _map[x, y];
         }
 
-        public void SetFigure(IFigureModel figure, Vector2Int vector2)
+        public override void SetFigure(IFigureModel figure, Vector2Int vector2)
         {
             _map[vector2.X, vector2.Y] = figure;
         }
 
-        public bool IsCanMoveTo(Direction[] directions, Vector2Int vector2Int)
+        public override bool IsCanMoveTo(Direction[] directions, Vector2Int vector2Int)
         {
             foreach (var direction in directions)
             {
@@ -87,7 +87,7 @@
             return false;
         }
 
-        public void MoveTo(Vector2Int[] oldPositions, Vector2Int[] newPositions)
+        public override void MoveTo(Vector2Int[] oldPositions, Vector2Int[] newPositions)
         {
             if (oldPositions.Length != newPositions.Length)
             {
@@ -102,7 +102,7 @@
             }
         }
 
-        public void MoveTo(Vector2Int oldPosition, Vector2Int newPosition)
+        public override void MoveTo(Vector2Int oldPosition, Vector2Int newPosition)
         {
             var figure = GetFigure(oldPosition);
 

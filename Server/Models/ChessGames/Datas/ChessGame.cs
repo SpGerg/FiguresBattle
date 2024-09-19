@@ -2,10 +2,10 @@
 {
     using Server.Models.Map.Interfaces;
 
-    public class ChessGame(int id, IMapModel map)
+    public class ChessGame(int id, IChessBoardModel map)
     {
         public int Id => id;
 
-        public IMapModel Map => map;
+        public IChessBoardModel Map => map;
     }
 }

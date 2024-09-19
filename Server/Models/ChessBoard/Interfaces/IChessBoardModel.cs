@@ -5,7 +5,7 @@
     using Server.Models.Figures.Interfaces;
     using Server.Models.Map.Datas;
 
-    public interface IMapModel
+    public interface IChessBoardModel
     {
         IReadOnlyList<ChessMoveDTO[]> ChessMoves { get; }
 

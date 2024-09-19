@@ -61,10 +61,21 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.41f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Datas\Vector2Int.cs" />
+    <Compile Include="Assets\Scripts\Models\ChessBoard\BasicChessBoardModel.cs" />
+    <Compile Include="Assets\Scripts\Models\ChessBoard\ChessBoardModel.cs" />
+    <Compile Include="Assets\Scripts\Models\ChessBoard\Interfaces\IChessBoardModel.cs" />
+    <Compile Include="Assets\Scripts\Models\Figures\Enums\FigureType.cs" />
     <Compile Include="Assets\Scripts\Models\Interfaces\ITransformable.cs" />
     <Compile Include="Assets\Scripts\Models\Interfaces\IUpdatable.cs" />
+    <Compile Include="Assets\Scripts\Presenters\ChessBoard\BasicChessBoardPresenter.cs" />
     <Compile Include="Assets\Scripts\Presenters\Figures\Datas\DirectionAndValue.cs" />
     <Compile Include="Assets\Scripts\Presenters\Figures\KnightPresenter.cs" />
+    <Compile Include="Assets\Scripts\Presenters\ChessBoard\ChessBoardPresenter.cs" />
+    <Compile Include="Assets\Scripts\Presenters\Loader\Datas\DTOs\ChessMoveDTO.cs" />
+    <Compile Include="Assets\Scripts\Presenters\Loader\LoaderPresenter.cs" />
+    <Compile Include="Assets\Scripts\Views\ChessBoard\ChessBoardView.cs" />
+    <Compile Include="Assets\Scripts\Views\ChessBoard\Interfaces\IChessBoardView.cs" />
     <Compile Include="Assets\Scripts\Views\Figures\Interfaces\IFigureView.cs" />
     <Compile Include="Assets\Scripts\Models\Figures\Interfaces\IFigureModel.cs" />
     <Compile Include="Assets\Scripts\Presenters\Figures\Interfaces\IFigurePresenter.cs" />
@@ -81,7 +92,7 @@
     <Compile Include="Assets\Scripts\Views\Figures\FigureView.cs" />
     <Compile Include="Assets\Scripts\Presenters\Figures\FigurePresenter.cs" />
     <Compile Include="Assets\Scripts\Enums\DirectionType.cs" />
-    <Compile Include="Assets\Scripts\Presenters\BoardSquarePresenter.cs" />
+    <Compile Include="Assets\Scripts\Presenters\ChessBoard\ChessBoardSquarePresenter.cs" />
     <Compile Include="Assets\Scripts\Models\Figures\BasicFigureModel.cs" />
     <Compile Include="Assets\Scripts\Enums\SideType.cs" />
   </ItemGroup>

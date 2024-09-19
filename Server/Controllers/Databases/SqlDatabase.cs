@@ -306,7 +306,7 @@ namespace Server.Controllers.Databases
             }
         }
 
-        private string GetEncrypted(string value)
+        private static string GetEncrypted(string value)
         {
             var inBytes = Encoding.UTF8.GetBytes(value);
             var encrypted = SHA256.HashData(inBytes);

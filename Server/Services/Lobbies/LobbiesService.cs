@@ -7,14 +7,18 @@
     using Server.Models.Lobbies.Datas;
     using Server.Models.Lobbies.Interfaces;
     using Server.Services.Accounts;
-    using Server.Services.Accounts.Datas;
     using Server.Services.Lobbies.Datas.DTOs;
     using Server.Services.Lobbies.Enums;
 
     public class LobbiesService(ILogger<LobbiesService> logger, ILobbiesRepository lobbiesRepository, AccountsService accountsService, FiguresFactory figuresFactory)
     {
-        public Lobby CreateLobby()
+        public Lobby CreateLobby(string creator)
         {
+            if (lobbiesRepository.GetLobbyWithAccount(creator) is not null)
+            {
+                throw new Exception("You cannot create a lobby while you are in another lobby");
+            }
+
             var figures = Enum.GetValues(typeof(FigureType));
             var figuresAbilities = new Dictionary<FigureType, AbilityType[]>();
 

@@ -33,6 +33,11 @@ namespace Server.Models.Lobbies
             return entity;
         }
 
+        public Lobby? GetLobbyWithAccount(string username)
+        {
+            return _lobbies.FirstOrDefault(lobby => lobby.Value.Accounts.FirstOrDefault(account => account.Username == username) is not null).Value;
+        }
+
         public int GetUniqueId()
         {
             if (_lobbies.IsEmpty)
