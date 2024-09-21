@@ -2,13 +2,16 @@
 
 namespace Presenters.Figures.Interfaces
 {
+    using Models.Figures.Enums;
     using Models.Figures.Interfaces;
+    using Presenters.ChessBoard;
     using Presenters.Interfaces;
-    using Views;
     using Views.Figures.Interfaces;
 
     public interface IFigurePresenter : IPresenter
     {
+        FigureType Type { get; }
+
         new IFigureModel Model { get; }
 
         new IFigureView View { get; }
@@ -17,6 +20,6 @@ namespace Presenters.Figures.Interfaces
 
         UnityEvent<IFigurePresenter> Kill { get; }
 
-        void MoveTo(BoardSquareView view);
+        void MoveTo(ChessBoardSquarePresenter presenter);
     }
 }

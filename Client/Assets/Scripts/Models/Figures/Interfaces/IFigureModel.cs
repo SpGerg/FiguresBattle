@@ -1,13 +1,12 @@
 ﻿namespace Models.Figures.Interfaces
 {
-    using Models.Abilities.Interfaces;
+    using Presenters.ChessBoard;
     using Presenters.Figures.Interfaces;
-    using Views;
 
-    public interface IFigureModel : IAbilityExecutor
+    public interface IFigureModel
     {
         IFigurePresenter Presenter { get; }
 
-        void MoveTo(BoardSquareView view);
+        void MoveTo(ChessBoardSquarePresenter presenter);
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Datas;
 
-namespace Presenters.Loader.Datas.DTOs
+namespace Models.Loader.Datas.DTOs
 {
     public class ChessMoveDTO
     {

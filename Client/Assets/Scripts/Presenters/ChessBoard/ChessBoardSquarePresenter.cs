@@ -1,16 +1,40 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Presenters.ChessBoard
 {
     using Models.Interfaces;
-    using Views;
+    using Presenters.Figures.Interfaces;
+    using Views.ChessBoard;
     using Views.Interfaces;
 
     public class ChessBoardSquarePresenter : PresenterBase
     {
-        public new BoardSquareView View { get; private set; }
+        [SerializeField]
+        private ChessBoardPresenter _chessBoardPresenter;
 
-        public void Initialize(BoardSquareView view)
+        private IFigurePresenter _figurePresenter;
+
+        public new ChessBoardSquareView View { get; private set; }
+
+        public IFigurePresenter Figure
+        {
+            get
+            {
+                return _figurePresenter;
+            }
+            set
+            {
+                _figurePresenter = value;
+
+                if (value is not null)
+                {
+                    View.PlayFigureEnterEffect();
+                }
+            }
+        }
+
+        public void Initialize(ChessBoardSquareView view)
         {
             View = view;
 
@@ -19,9 +43,9 @@ namespace Presenters.ChessBoard
 
         public override void Initialize(IModel model, IView view)
         {
-            if (view is not BoardSquareView boardSquareView)
+            if (view is not ChessBoardSquareView boardSquareView)
             {
-                throw new ArgumentException($"Except {nameof(BoardSquareView)}");
+                throw new ArgumentException($"Except {nameof(ChessBoardSquareView)}");
             }
 
             Initialize(boardSquareView);

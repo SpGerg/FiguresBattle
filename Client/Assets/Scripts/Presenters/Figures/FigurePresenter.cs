@@ -1,26 +1,25 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 namespace Presenters.Figures
 {
     using Enums;
+    using Models.Figures.Enums;
     using Models.Figures.Interfaces;
-    using Presenters.Figures.Datas;
+    using Presenters.ChessBoard;
     using Presenters.Figures.Interfaces;
-    using Views;
     using Views.Figures.Interfaces;
 
     public abstract class FigurePresenter : PresenterBase, IFigurePresenter
     {
         [SerializeField]
+        private FigureType _figureType;
+
+        [SerializeField]
         private GameObject _white;
 
         [SerializeField]
         private GameObject _black;
-
-        [SerializeField]
-        private DirectionAndValue[] _directions;
 
         private SideType _side;
 
@@ -51,9 +50,11 @@ namespace Presenters.Figures
 
         public GameObject Black => _black;
 
-        public void MoveTo(BoardSquareView view)
+        public FigureType Type => _figureType;
+
+        public void MoveTo(ChessBoardSquarePresenter presenter)
         {
-            Model.MoveTo(view);
+            Model.MoveTo(presenter);
         }
     }
 }

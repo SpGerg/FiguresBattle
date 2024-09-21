@@ -9,9 +9,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
-    <ProjectGuid>{94F6A689-1235-ED49-6EAD-8C0A6DDF3CA0}</ProjectGuid>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{12F44184-A422-5F27-22E6-507969043F15}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,38 +60,44 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.41f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Datas\Vector2Int.cs" />
-    <Compile Include="Assets\Scripts\Models\ChessBoard\BasicChessBoardModel.cs" />
-    <Compile Include="Assets\Scripts\Models\ChessBoard\ChessBoardModel.cs" />
-    <Compile Include="Assets\Scripts\Models\ChessBoard\Interfaces\IChessBoardModel.cs" />
-    <Compile Include="Assets\Scripts\Models\Figures\Enums\FigureType.cs" />
-    <Compile Include="Assets\Scripts\Models\Interfaces\ITransformable.cs" />
-    <Compile Include="Assets\Scripts\Models\Interfaces\IUpdatable.cs" />
-    <Compile Include="Assets\Scripts\Presenters\ChessBoard\BasicChessBoardPresenter.cs" />
-    <Compile Include="Assets\Scripts\Presenters\Figures\Datas\DirectionAndValue.cs" />
-    <Compile Include="Assets\Scripts\Presenters\Figures\KnightPresenter.cs" />
-    <Compile Include="Assets\Scripts\Presenters\ChessBoard\ChessBoardPresenter.cs" />
-    <Compile Include="Assets\Scripts\Presenters\Loader\Datas\DTOs\ChessMoveDTO.cs" />
-    <Compile Include="Assets\Scripts\Presenters\Loader\LoaderPresenter.cs" />
-    <Compile Include="Assets\Scripts\Views\ChessBoard\ChessBoardView.cs" />
-    <Compile Include="Assets\Scripts\Views\ChessBoard\Interfaces\IChessBoardView.cs" />
     <Compile Include="Assets\Scripts\Views\Figures\Interfaces\IFigureView.cs" />
     <Compile Include="Assets\Scripts\Models\Figures\Interfaces\IFigureModel.cs" />
+    <Compile Include="Assets\Scripts\Models\Loader\LoaderModel.cs" />
+    <Compile Include="Assets\Scripts\Views\ChessBoard\ChessBoardSquareView.cs" />
     <Compile Include="Assets\Scripts\Presenters\Figures\Interfaces\IFigurePresenter.cs" />
-    <Compile Include="Assets\Scripts\Views\Figures\BasicFigureView.cs" />
     <Compile Include="Assets\Scripts\Views\Interfaces\IView.cs" />
+    <Compile Include="Assets\Scripts\Pools\FiguresPool.cs" />
     <Compile Include="Assets\Scripts\Presenters\Interfaces\IPresenter.cs" />
     <Compile Include="Assets\Scripts\Presenters\PresenterBase.cs" />
+    <Compile Include="Assets\Scripts\Presenters\ChessBoard\ChessBoardPresenter.cs" />
     <Compile Include="Assets\Scripts\Models\ModelBase.cs" />
+    <Compile Include="Assets\Scripts\Models\Loader\Interfaces\ILoaderModel.cs" />
+    <Compile Include="Assets\Scripts\Datas\KeyAndValue.cs" />
     <Compile Include="Assets\Scripts\Views\ViewBase.cs" />
     <Compile Include="Assets\Scripts\Models\TransformableModel.cs" />
-    <Compile Include="Assets\Scripts\Views\BoardSquareView.cs" />
+    <Compile Include="Assets\Scripts\Views\Figures\BasicFigureView.cs" />
+    <Compile Include="Assets\Scripts\Models\Interfaces\IUpdatable.cs" />
     <Compile Include="Assets\Scripts\Models\Figures\FigureModel.cs" />
+    <Compile Include="Assets\Scripts\Models\Figures\Enums\FigureType.cs" />
+    <Compile Include="Assets\Scripts\Presenters\Loader\LoaderPresenter.cs" />
+    <Compile Include="Assets\Scripts\Presenters\Figures\FiguresFactory.cs" />
+    <Compile Include="Assets\Scripts\Models\ChessBoard\BasicChessBoardModel.cs" />
+    <Compile Include="Assets\Scripts\Datas\Vector2Int.cs" />
+    <Compile Include="Assets\Scripts\Presenters\ChessBoard\BasicChessBoardPresenter.cs" />
     <Compile Include="Assets\Scripts\Models\Interfaces\IModel.cs" />
-    <Compile Include="Assets\Scripts\Views\Figures\FigureView.cs" />
-    <Compile Include="Assets\Scripts\Presenters\Figures\FigurePresenter.cs" />
-    <Compile Include="Assets\Scripts\Enums\DirectionType.cs" />
+    <Compile Include="Assets\Scripts\Presenters\ChessBoard\Interfaces\IChessBoardPresenter.cs" />
     <Compile Include="Assets\Scripts\Presenters\ChessBoard\ChessBoardSquarePresenter.cs" />
+    <Compile Include="Assets\Scripts\Views\ChessBoard\ChessBoardView.cs" />
+    <Compile Include="Assets\Scripts\Views\Figures\FigureView.cs" />
+    <Compile Include="Assets\Scripts\Models\Loader\Datas\DTOs\ChessMoveDTO.cs" />
+    <Compile Include="Assets\Scripts\Presenters\Figures\KnightPresenter.cs" />
+    <Compile Include="Assets\Scripts\Presenters\Figures\FigurePresenter.cs" />
+    <Compile Include="Assets\Scripts\Models\ChessBoard\Interfaces\IChessBoardModel.cs" />
+    <Compile Include="Assets\Scripts\Models\ChessBoard\ChessBoardModel.cs" />
+    <Compile Include="Assets\Scripts\Views\ChessBoard\Interfaces\IChessBoardView.cs" />
+    <Compile Include="Assets\Scripts\Enums\DirectionType.cs" />
+    <Compile Include="Assets\Scripts\Pools\MonoPoolBase.cs" />
+    <Compile Include="Assets\Scripts\Models\Interfaces\ITransformable.cs" />
     <Compile Include="Assets\Scripts\Models\Figures\BasicFigureModel.cs" />
     <Compile Include="Assets\Scripts\Enums\SideType.cs" />
   </ItemGroup>
@@ -1054,7 +1059,8 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

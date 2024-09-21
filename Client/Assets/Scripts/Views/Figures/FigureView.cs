@@ -2,7 +2,7 @@
 {
     using Views.Figures.Interfaces;
     using Presenters.Figures.Interfaces;
-    using Presenters.Interfaces;
+    using Presenters.ChessBoard;
 
     public abstract class FigureView : ViewBase, IFigureView
     {
@@ -12,9 +12,9 @@
 
         public new IFigurePresenter Presenter { get; private set; }
 
-        public void MoveTo(BoardSquareView view)
+        public void MoveTo(ChessBoardSquarePresenter presenter)
         {
-            Presenter.MoveTo(view);
+            Presenter.MoveTo(presenter);
         }
     }
 }

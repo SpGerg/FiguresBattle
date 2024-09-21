@@ -288,6 +288,8 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194230}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -369,6 +371,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 45, y: 45, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2264d4438aedf64face679f7cb0c92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _templates:
+  - _key: 0
+    _value: {fileID: 1269429724}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c98bd9f27bff12418591e4a40d70173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _factory: {fileID: 0}
 --- !u!1 &1237203642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e7bad0f8e6563445a31bfca7a760b3b, type: 3}
@@ -388,7 +418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1269429723}
-  - component: {fileID: 1269429722}
+  - component: {fileID: 1269429724}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -396,21 +426,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1269429722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269429721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68b824ac611316541ab35235f3e31584, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _white: {fileID: 1237203642}
-  _black: {fileID: 1913558555}
-  _directions: []
 --- !u!4 &1269429723
 Transform:
   m_ObjectHideFlags: 0
@@ -428,6 +443,21 @@ Transform:
   - {fileID: 1913558556}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1269429724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269429721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6303d47eeae8b845a724cceb12be1f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _figureType: 0
+  _white: {fileID: 1237203642}
+  _black: {fileID: 1913558555}
 --- !u!1 &1669143027
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,8 +5401,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 51db9b0c654127041a0f974ab3f52817, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1822870355}
   m_SourcePrefab: {fileID: 100100000, guid: 51db9b0c654127041a0f974ab3f52817, type: 3}
+--- !u!1 &1822870354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 51db9b0c654127041a0f974ab3f52817, type: 3}
+  m_PrefabInstance: {fileID: 1822870353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1822870355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822870354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d39555c1ca3c064ab4f4588a8e14deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _boardSquares: []
+  _figuresPool: {fileID: 0}
+  _chessBoardSquares: []
 --- !u!1 &1913558555 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f7bfc0394f3daba4c9c5115e735f0b52, type: 3}

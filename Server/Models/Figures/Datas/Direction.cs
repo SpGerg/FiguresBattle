@@ -9,5 +9,7 @@
         public bool IsToEnd { get; init; } 
 
         public bool IsEnemyRequired { get; init; }
+
+        public bool IsCanKill { get; init; }
     }
 }

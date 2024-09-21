@@ -44,6 +44,11 @@ namespace Datas
             return vector2Int == this;
         }
 
+        public override readonly string ToString()
+        {
+            return $"X: {X}, Y: {Y}, Hash code: {GetHashCode()}";
+        }
+
         public override readonly int GetHashCode()
         {
             return HashCode.Combine(X, Y);

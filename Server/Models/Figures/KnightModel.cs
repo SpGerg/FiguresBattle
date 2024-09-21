@@ -22,56 +22,64 @@
             //0@00
             new()
             {
-                Position = new Vector2Int(1, 3)
+                Position = new Vector2Int(1, 3),
+                IsCanKill = true
             },
             //0000
             //000#
             //0@00
             new()
             {
-                Position = new Vector2Int(2, 1)
+                Position = new Vector2Int(2, 1),
+                IsCanKill = true
             },
             //0#00
             //0000
             //00@0
             new()
             {
-                Position = new Vector2Int(-1, 3)
+                Position = new Vector2Int(-1, 3),
+                IsCanKill = true
             },
             //0000
             //#000
             //00@0
             new()
             {
-                Position = new Vector2Int(-2, 1)
+                Position = new Vector2Int(-2, 1),
+                IsCanKill = true
             },
             //00@0
             //0000
             //0#00
             new()
             {
-                Position = new Vector2Int(2, -2)
+                Position = new Vector2Int(2, -2),
+                IsCanKill = true
             },
             //00@0
             //#000
             //0000
             new()
             {
-                Position = new Vector2Int(2, -1)
+                Position = new Vector2Int(2, -1),
+                IsCanKill = true
             },
             //0@00
             //0000
             //00#0
             new()
             {
-                Position = new Vector2Int(-1, -3)
+                Position = new Vector2Int(-1, -3),
+                IsCanKill = true
             },
             //0@00
             //000#
             //0000
             new()
             {
-                Position = new Vector2Int(-2, 1)
+                Position = new Vector2Int(-2, 1),
+                IsCanKill = true
             }
         ];
     }

@@ -6,9 +6,10 @@ namespace Presenters.ChessBoard
     using Datas;
     using Models.ChessBoard.Interfaces;
     using Models.Figures.Enums;
+    using Presenters.ChessBoard.Interfaces;
     using Views.ChessBoard.Interfaces;
 
-    public abstract class ChessBoardPresenter : PresenterBase
+    public abstract class ChessBoardPresenter : PresenterBase, IChessBoardPresenter
     {
         public abstract new IChessBoardModel Model { get; }
 
